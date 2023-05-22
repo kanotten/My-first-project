@@ -222,6 +222,24 @@ const drawMan = (count) => {
     }
 };
 
+ProgressCountdown(10, "pageBeginCountdownText");
+
+function ProgressCountdown(timeleft, text) {
+    return new Promise((resolve, reject) => {
+        var countdownTimer = setInterval(() => {
+            timeleft--;
+
+            document.getElementById(text).textContent = timeleft;
+
+            if (timeleft <= 0) {
+                clearInterval(countdownTimer);
+                resolve(true);
+            }
+        }, 1000);
+    });
+}
+
+
 //New Game
 newGameButton.addEventListener("click", initializer);
 window.onload = initializer;
