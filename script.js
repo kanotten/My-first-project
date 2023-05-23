@@ -11,9 +11,9 @@ const resultText = document.getElementById("result-text");
 let options = {
     Worlds_greatest_illusion: [
         "innocence",],
-    The_music_of_life: ["Silence",],
+    The-music-of-life: ["Silence",],
     Whats_the_taste_of_fear: [
-        "Bitter",],
+        "Bitter, metallic",],
 };
 
 //count
