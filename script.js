@@ -11,7 +11,7 @@ const resultText = document.getElementById("result-text");
 let options = {
     Worlds_greatest_illusion: [
         "innocence",],
-    The-music-of-life: ["Silence",],
+    The_music_of_life: ["Silence",],
     Whats_the_taste_of_fear: [
         "Bitter, metallic",],
 };
