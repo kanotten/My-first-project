@@ -9,11 +9,9 @@ const resultText = document.getElementById("result-text");
 
 //Options values for buttons
 let options = {
-    Worlds_greatest_illusion: [
-        "innocence",],
-    The_music_of_life: ["Silence",],
-    Whats_the_taste_of_fear: [
-        "Bitter, metallic",],
+    "Worlds greatest illusion": ["innocence",],
+    "The music of life": ["Silence",],
+    "Whats the taste of fear": ["Bitter", "metallic",],
 };
 
 //count
