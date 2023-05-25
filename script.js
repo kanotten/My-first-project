@@ -17,7 +17,7 @@ let options = {
 //count
 let winCount = 0;
 let count = 0;
-
+let timeleft = 10;
 let chosenWord = "";
 
 //Display option buttons
@@ -77,6 +77,7 @@ const generateWord = (optionValue) => {
 const initializer = () => {
     winCount = 0;
     count = 0;
+    timeleft = 10;
 
     //Initially erase all content and hide letteres and new game button
     userInputSection.innerHTML = "";
@@ -220,9 +221,9 @@ const drawMan = (count) => {
     }
 };
 
-ProgressCountdown(10, "pageBeginCountdownText");
+ProgressCountdown("pageBeginCountdownText");
 
-function ProgressCountdown(timeleft, text) {
+function ProgressCountdown(text) {
     return new Promise((resolve, reject) => {
         var countdownTimer = setInterval(() => {
             timeleft--;
