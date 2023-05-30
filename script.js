@@ -2,7 +2,6 @@
 const letterContainer = document.getElementById("letter-container");
 const optionsContainer = document.getElementById("options-container");
 const userInputSection = document.getElementById("user-input-section");
-const newGameContainer = document.getElementById("new-game-container");
 const newGameButton = document.getElementById("new-game-button");
 const canvas = document.getElementById("canvas");
 const resultText = document.getElementById("result-text");
@@ -43,7 +42,6 @@ const blocker = () => {
     letterButtons.forEach((button) => {
         button.disabled.true;
     });
-    newGameContainer.classList.remove("hide");
 };
 
 //Word Generator
@@ -59,7 +57,6 @@ const generateWord = (optionValue) => {
 
     //initially hide letters, clear previous word
     letterContainer.classList.remove("hide");
-    userInputSection.innerText = "";
 
     let optionArray = options[optionValue];
     //choose random word
@@ -83,7 +80,6 @@ const initializer = () => {
     userInputSection.innerHTML = "";
     optionsContainer.innerHTML = "";
     letterContainer.classList.add("hide");
-    newGameContainer.classList.add("hide");
     letterContainer.innerHTML = "";
 
     //For creating letter buttons

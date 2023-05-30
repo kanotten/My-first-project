@@ -70,10 +70,6 @@ body {
 }
 
 .new-game-popup {
-	background-color: #ea1010;
-	position: absolute;
-	left: 0;
-	top: 0;
 	height: 100%;
 	width: 100%;
 	display: flex;
