@@ -72,7 +72,7 @@ const generateWord = (optionValue) => {
 
 //Initial Function (Called when page loads/user presses new game)
 const initializer = () => {
-    resultText.innerHTML = "";
+
     winCount = 0;
     count = 0;
     timeleft = 10;
@@ -229,7 +229,9 @@ function ProgressCountdown(text) {
 
             if (timeleft <= 0) {
                 clearInterval(countdownTimer);
-                resolve(true);
+                resultText.innerHTML = `<h2 class='lose-msg'>Too slow!</h2><p>HDD transfer file/malware/worm completed </p>`;
+                blocker();
+                resolve(false);
             }
         }, 1000);
     });
