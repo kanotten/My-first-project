@@ -72,6 +72,7 @@ const generateWord = (optionValue) => {
 
 //Initial Function (Called when page loads/user presses new game)
 const initializer = () => {
+    resultText.innerHTML = "";
     winCount = 0;
     count = 0;
     timeleft = 10;
